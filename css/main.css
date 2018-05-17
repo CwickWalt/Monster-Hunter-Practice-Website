@@ -191,7 +191,7 @@ nav, .navbr {
 
 /* hover grey */
 
-.navbr__item--hover:hover {
+.navbr__item--hover::hover {
 	color: #a9a9a9;
 	text-decoration: none;
 }
@@ -206,6 +206,7 @@ nav, .navbr {
 .grid-container {
 	display: grid;
 	grid-template-columns: 40px auto auto 40px;
+	position: relative;
 }
 
 .grid-container-content {
@@ -242,6 +243,9 @@ nav, .navbr {
 	margin: 35px;
 	box-shadow: 1px 1px 2px 3px #979797;
 	width: 200px;
+	height: 175px;
+	position: relative;
+	transition: transform 0.3s linear;
 }
 
 .img-container_text {
@@ -249,15 +253,33 @@ nav, .navbr {
 	background-color: #7f7fff;
 	transform: rotate(180deg);
 	vertical-align: middle;
-	height: 150px;
+	height: 175px;
 	text-align: center;
 	margin: 0;
 }
 
-.img-container_text--modifer {
+.img-container_text--modifier {
 	font-size: 15px;
 	font-weight: bold;
 	color: white;
+}
+
+.img-container:hover .img-container_text {
+	writing-mode: horizontal-tb;
+	height: 30px;
+	width: 200px;
+	vertical-align: none;
+	margin: auto;
+	transform: none;
+	display: block;
+}
+
+.img-container:hover .flex-container-img {
+	margin-left: 20px;
+}
+
+.img-container:hover {
+	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 400px) {
@@ -280,3 +302,4 @@ nav, .navbr {
 		max-width: 175px;
 	}
 }
+
