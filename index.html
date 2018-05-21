@@ -5,20 +5,27 @@
 				Monster Hunter World Hype
 			</title>
 			<meta charset=UTF-8>
-			<!-- <meta name="viewport" content="width=device width, intial-scale=1"> -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<meta name="viewport" content="width=device width, intial-scale=1">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
 		</head>
 		<body>
 			<nav class="navbr">
 				<ul class="navbr__item-list">
 					<li>
-						<a href="#home" class="navbr__item navbr__item--hover white glyphicon glyphicon-home" ></a>
+						<a href="#home" class="navbr__item navbr__item--hover white">Home</a>
 					</li>
-					<li><a href="#monsters" class="navbr__item navbr__item--hover white">Monsters</a></li>
-					<li><a href="#armor_weapons" class="navbr__item navbr__item--hover white">Armor & Weapons</a></li>
-					<li><a href="#map" class="navbr__item navbr__item--hover white">Map</a></li>
-					<li><a href="#shop" class="navbr__item navbr__item--hover white">Shop</a></li>
+					<li>
+						<a href="#monsters" class="navbr__item navbr__item--hover white">Monsters</a>
+					</li>
+					<li>
+						<a href="#armor_weapons" class="navbr__item navbr__item--hover white">Armor & Weapons</a>
+					</li>
+					<li>
+						<a href="#map" class="navbr__item navbr__item--hover white">Map</a>
+					</li>
+					<li>
+						<a href="#shop" class="navbr__item navbr__item--hover white">Shop</a>
+					</li>
 					<!-- turn these li's into a compressed menu item on smaller screens -->
 				</ul>
 			</nav>
@@ -41,36 +48,43 @@
 				<div class="carousel-container__centered-text carousel-container__centered-text--modifier">
 					Monster Hunter World
 				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
-			<br>
-
-			<!-- <div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
-			</div> -->
 			<div class="grid-container">
 				<div id="monsters" class="grid-container-content flex-container">
 					<h3 class="grid-container-content_header">Monsters</h3>
 					<br><br>
 					<ul class="flex-content">
-						<li class="img-container">
-							<span class="img-container_text img-container_text--modifier">Rathalos</span>
-							<img class="flex-container-img" src="./css/assets/MHW-Rathalos_icon.png">
+						<li class="flex-content__img-container">
+							<div class="flex-content__img-container-wrap">
+								<span class="flex-content__img-container-text flex-content__img-container-text--modifier">
+									Rathalos
+								</span>
+								<img class="flex-content__img" src="./css/assets/MHW-Rathalos_icon.png">
+							</div>
 						</li>
-						<li class="img-container">
-							<span class="img-container_text img-container_text--modifier">Nergigante</span>
-							<img class="flex-container-img" src="./css/assets/MHW-Nergigante_icon.png">
+						<li class="flex-content__img-container">
+							<div class="flex-content__img-container-wrap">
+								<span class="flex-content__img-container-text flex-content__img-container-text--modifier">
+									Nergigante
+								</span>
+								<img class="flex-content__img" src="./css/assets/MHW-Nergigante_icon.png">
+							</div>
 						</li>
-						<li class="img-container">
-							<span class="img-container_text img-container_text--modifier">Odogaron</span>
-							<img class="flex-container-img" src="./css/assets/MHW-Odogaron_icon.png">
+						<li class="flex-content__img-container">
+							<div class="flex-content__img-container-wrap">
+									<span class="flex-content__img-container-text flex-content__img-container-text--modifier">
+										Odogaron
+									</span>
+									<img class="flex-content__img" src="./css/assets/MHW-Odogaron_icon.png">
+							</div>
 						</li>
-						<li class="img-container">
-							<span class="img-container_text img-container_text--modifier">Bazelgeuse</span>
-							<img class="flex-container-img" src="./css/assets/MHW-Bazelgeuse_icon.png">
+						<li class="flex-content__img-container">
+							<div class="flex-content__img-container-wrap">
+								<span class="flex-content__img-container-text flex-content__img-container-text--modifier">
+									Bazelgeuse
+								</span>
+								<img class="flex-content__img" src="./css/assets/MHW-Bazelgeuse_icon.png">
+							</div>
 						</li>
 					</ul>
 				</div>
