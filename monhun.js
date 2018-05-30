@@ -15,3 +15,20 @@ function showSlidesAuto() {
     slides[autoSlideIndex-1].style.display = "block"; 
     setTimeout(showSlidesAuto, 4500);
 }
+
+//change navbar position onscroll
+
+// window.onScroll = moveNavbar;
+
+
+// function moveNavbar() {
+// 	var navbar = document.getElementById('navbar'),
+// 		document.getElementById('monsters');
+
+// 		if(document.body.scrollTop > monsters.getBoundingClientRect().top) {
+// 			navbar.classList.toggle('navbar--rotated')
+// 		} else {
+// 			navbar.classList.toggle('navbar--rotated')
+// 		}
+		
+// }
